@@ -1,0 +1,60 @@
+* {
+    margin: 0; padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-weight: normal;
+    line-height: 1.3em;
+}
+
+ul {
+    margin: 1em 2em;
+}
+
+a {
+    color: #00f;
+}
+
+canvas {
+    background: #eee url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgoJPGxpbmUgeDE9IjAiIHkxPSI1MCUiIHgyPSIxMDAlIiB5Mj0iNTAlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzdmZWNmZiIgLz4KCTxsaW5lIHgxPSI1MCUiIHkxPSIwIiB4Mj0iNTAlIiB5Mj0iMTAwJSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiM3ZmVjZmYiIC8+Cjwvc3ZnPg==);
+}
+
+.demo {
+    margin: 1em auto;
+}
+
+pre code {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-size: 1.3em;
+    }
+
+    canvas,
+    pre {
+        float: left;
+    }
+
+    pre {
+        width: calc(100% - 500px);
+    }
+
+    pre code {
+        height: 500px;
+    }
+
+}

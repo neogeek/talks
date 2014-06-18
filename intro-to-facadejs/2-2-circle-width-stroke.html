@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<title>Canvas Examples - 2.2 Circle With Stroke</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/highlight.js/8.0/styles/github.css">
+</head>
+
+<body>
+
+<p><a href="index.html">Canvas Examples</a></p>
+
+<h1>2.1 Circle With Stroke</h1>
+
+<div class="demo">
+
+<canvas width="500" height="500"></canvas>
+
+<pre><code>var canvas = document.querySelector('canvas'),
+    context = canvas.getContext('2d');
+
+context.beginPath();
+
+context.arc(250, 250, 50, 0, Math.PI * 180);
+
+context.closePath();
+
+context.fillStyle = '#333';
+
+context.fill();
+
+context.lineWidth = 10;
+context.strokeStyle = '#33CC77';
+
+context.stroke();</code></pre>
+
+</div>
+
+<script src="js/resize-for-retina.js"></script>
+<script>
+
+(function () {
+
+    'use strict';
+
+    var canvas = document.querySelector('canvas'),
+        context = canvas.getContext('2d');
+
+    resizeForRetina(canvas);
+
+    context.beginPath();
+
+    context.arc(250, 250, 50, 0, Math.PI * 180);
+
+    context.closePath();
+
+    context.fillStyle = '#333';
+
+    context.fill();
+
+    context.lineWidth = 10;
+    context.strokeStyle = '#33CC77';
+
+    context.stroke();
+
+}());
+
+</script>
+
+<script src="//cdn.jsdelivr.net/highlight.js/8.0/highlight.min.js"></script>
+<script src="//cdn.jsdelivr.net/highlight.js/8.0/languages/javascript.js"></script>
+
+<script>
+
+(function () {
+
+    hljs.initHighlightingOnLoad();
+
+}());
+
+</script>
+
+</body>
+</html>
